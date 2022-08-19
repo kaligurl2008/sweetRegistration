@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sweet Berries Registration</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <header>
+                <img src="https://s3-alpha-sig.figma.com/img/af76/2c31/71c57a5c3264da5081e26509c7c81e2e?Expires=1661731200&Signature=HHiwSZc-oxl1KfnRbSlwYiDWj3LwoqhO6aG~4nC6Z3LvqXm0G6sDGdMUUVyyrlVqDrlzkLPZpGH5kTs8y6izWWlEj3I7KJpu8H83BtiDyLya6UAyTS1m-M92j-rekrEyIBMlGKkCkoOtT3qD7qJgCL7xNu7NAShjLEHJHZGL-zDUoqYMwM0IuSe8Ca8jg4O8Ug1YamHQDWHgKeUtSPffsANvglACV9t1Gx7M0I0mapsblOG9ten1oh1UY~~mfbAp2QDpDDapE-WRJb5c34LH~GGj9QpUCCkHbQecT7Y4W3sCXB6t6vFzbSLJDCmIrx3bOtL89c5uTFGkwVzDavZc4g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA">
+                <nav>
+                    <a href="#">Courses</a>
+                    <a href="#">About Us</a>
+                    <a href="#" class="main">Main</a>
+                </nav>
+            </header>
+        </div>
+        <div>
+            <main>
+                <h1>
+                    Sweet Berries Registration
+                </h1>
+                <form>
+                    <fieldset>
+                        <label for="firstName">First Name:</label>
+                        <br>
+                        <input type="text" id="firstName" name="firstName" required>
+                        <br>
+                        <label for="lastName">Last Name:</label>
+                        <br>
+                        <input type="text" id="lastName" name="lastName" required>
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <label for="email">Email:</label>
+                        <br>
+                        <input type="email" id="email" name="email" required>
+                        <br>
+                        <label for="password">Password</label>
+                        <br>
+                        <input type="password" id="password" name="password" minlength="6" required>
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <label for="courses">Please Select Your Course:</label>
+                        <br>
+                        <select id="courses" name="courses" required>
+                            <option value="choose">Choose An Option</option>
+                            <option value="essentials">Cooking Essentials</option>
+                            <option value="skills">Chef Skills</option>
+                            <option value="nutrition">Nutrition in Cooking</option>
+                            <option value="plant">Plant-Based Cooking</option>
+                            <option value="teen">Teen's Kitchen</option>
+                        </select>
+                        <br>
+                        <label for="notes">Notes:</label>
+                        <br>
+                        <textarea id="notes" name="notes" rows="10" cols="30">
+                            Enter any information you think is important for us to know.
+                        </textarea>
+                    </fieldset>
+                    <input type="submit" value="Submit">
+                </form>
+            </main>
+        </div>
+        <div>
+            <footer>
+                <p>Sweet Berries</p>
+            </footer>
+        </div>
+    </body>
+</html>

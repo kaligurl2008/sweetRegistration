@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color:#FF4C4C;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color:#FF4C4C;
+    font-weight: bold;
+    margin: 0 16px;
+}
+
+nav .main {
+    margin-right: 64px;
+}
+
+h1 {
+    color: #FF4C4C;
+    display: flex;
+    justify-content: center;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    padding: 8px;
+    margin: 8px;
+}
+
+input, label, select, textarea {
+    margin: 16px 16px;
+}
+
+footer {
+    height: 78px;
+    background-color:#FF4C4C;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
