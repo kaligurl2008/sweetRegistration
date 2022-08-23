@@ -1,0 +1,309 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  header {
+      grid-area: header;
+      align-self: stretch;
+  }
+  
+  header a{
+          font-family: 'Roboto', sans-serif;
+          text-decoration: none;
+          color: #FF4C4C;
+          margin: 4px 0;
+          
+      }
+  
+  header img {
+      width: 200px;
+      height: 200px;
+  }
+  
+  
+  .card {
+      width: 350px;
+      height: 322px;
+      box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+      border-radius: 15px;
+      padding: 0 32px;
+  }
+  
+  .card img {
+      margin: -44px 0 0 -23px;
+  }
+  
+  .card-flex {
+      width: 286px;
+      height: 218px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 16px 0 0 0;
+  }
+  
+  .card-flex p {
+      width: 260px;
+      height: 112px;
+      font-weight: bold;
+      color: #83869A;
+  }
+  
+  .card a {
+      text-decoration: none;
+      color: #FF4C4C;
+      font-weight: bold;
+  }
+  
+  .essentials {
+      grid-area: essentials;
+  }
+  
+  .skills {
+      grid-area: skills;
+  }
+  
+  .popular-course {
+      background: linear-gradient(180deg, #FF4C4C 0%, #A94E97 100%);
+      color: white;
+      font-size: 40px;
+      grid-area: popular-course
+  }
+  
+  .nutrition {
+    grid-area: nutrition;  
+  }
+  
+  .plant {
+      grid-area: plant;
+  }
+  
+  .teen {
+      grid-area: teen;
+  }
+  
+  footer{
+      background-color: #FF4C4C;
+      color: white;
+      height: 78px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  
+  /* desktop */
+  @media (min-width: 1551px){
+      header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 60px;
+      }
+  
+      .trioMenu, #menucheck {
+          display: none;
+      }
+  
+      header a{
+          font-family: 'Roboto', sans-serif;
+          text-decoration: none;
+          color: #FF4C4C;
+          margin: 0 16px;
+          
+      }
+  
+      header #start {
+          background: linear-gradient(180deg, #FF4C4C 0%, #A94E97 100%);
+          color: white;
+          padding: 19px 28px;
+          border-radius: 28px;
+      }
+  
+      .banner-container {
+          display: flex;
+          justify-content: space-around;
+  }
+  
+      .banner-text {
+          flex-basis: 506px;
+          margin: 60px;
+      }
+  
+      .banner-container img {
+          width: 757px;
+          height: 364px;
+          margin: 0 90px 0 28px;
+          border-radius: 39px;
+      }
+  
+      .card-container {
+          display: grid;
+          grid-template: 1fr 1fr / 1fr 1fr 1fr;
+          grid-template-areas:
+              "essentials skills popular-course"
+              "nutrition plant teen";
+          gap: 96px;
+          padding: 200px 92px 143px 92px;
+          justify-content: center;
+      }
+      
+  }
+  
+  
+  
+  /* tablet */
+  @media (min-width: 1001px) and (max-width: 1550px){
+          header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 60px;
+      }
+  
+      .trioMenu, #menucheck {
+          display: none;
+      }
+  
+      header a{
+          font-family: 'Roboto', sans-serif;
+          text-decoration: none;
+          color: #FF4C4C;
+          margin: 0 16px;
+          
+      }
+  
+      header #start {
+          background: linear-gradient(180deg, #FF4C4C 0%, #A94E97 100%);
+          color: white;
+          padding: 19px 28px;
+          border-radius: 28px;
+      }
+  
+      .banner-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-bottom: 120px;
+  }
+  
+      .banner-text {
+          width: 520px;
+          margin-left: -64px;
+          text-align: center;
+      }
+  
+      .banner-container img {
+          width: 612px;
+          height: 344px;
+          margin: 0 90px 0 28px;
+          border-radius: 39px;
+      }
+  
+      .card-container {
+          display: grid;
+          grid-template: 1fr 1fr 1fr / 1fr 1fr;
+          grid-template-areas:
+              "essentials skills"
+              "popular-course nutrition"
+              "plant teen";
+          gap: 89px 25px;
+          padding: 120px 25px 84px 90px;
+          justify-content: center;
+      }
+  }
+  
+  
+  
+  
+  
+  /* mobile */
+  @media (max-width: 1000px){
+      header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 60px;
+      }
+  
+      a {
+          font-weight: bold;
+      }
+  
+      header img {
+      width: 123px;
+      height: 123px;
+  }
+      
+      .trioMenu {
+          color: #FF4C4C;
+          font-size: 45px;
+          margin-right: 38px;
+      }
+  
+      #menucheck {
+          display: none;
+      }
+  
+      nav {
+          display: none;
+      }
+  
+      #menucheck:checked + nav {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          position: absolute;
+          top: 104px;
+          right: 0;
+          
+      }
+      
+      
+  
+      .banner-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding-bottom: 120px;
+      }
+  
+      .banner-text {
+          width: 327px;
+          text-align: center;
+          margin-bottom: 32px;
+      }
+  
+      .banner-container img {
+          width: 379px;
+          height: 217px;
+          border-radius: 39px;
+          justify-self: center;
+      }
+  
+      .card-container {
+          display: grid;
+          grid-template: . 1fr 2fr 2fr 2fr 2fr 2fr / 1fr;
+          grid-template-areas:
+              "popular-course"
+              "essentials"
+              "skills"
+              "nutrition"
+              "plant"
+              "teen";
+          row-gap: 89px;
+          justify-items: center;
+          
+      }
+      .popular-course{
+          font-size: 24px;
+          height: 98px;
+          text-align: center;
+      }
+  }
+  
